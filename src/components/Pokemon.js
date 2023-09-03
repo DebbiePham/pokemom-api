@@ -5,7 +5,7 @@ const Pokemon = () => {
     const [pokemonList, setPokemonList] = useState([]);
 
     const fetchPokemon = () => {
-        fetch("https://pokeapi.co/api/v2/ability/?limit=20&offset=20")
+        fetch("https://pokeapi.co/api/v2/pokemon?limit=807&offset=0")
             .then(response => {
                 // not the actual JSON response body but the entire HTTP response
                 return response.json();
